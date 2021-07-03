@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name:  selenium-svn
+  labels:
+    app: selenium-svn
+spec:
+  selector:
+    app:  selenium-hub
+  type:  NodePort
+  ports:
+  - name:  name-of-the-port
+    port:  4444
+    nodePort: 30001
+    targetPort:  4444

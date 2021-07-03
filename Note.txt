@@ -1,0 +1,10 @@
+ kubectl create -f pod.yml
+ kubectl get pods 
+ kubectl get any resource 
+ kubectl describe pods
+ kubectl expose pod selenium-hub --name=hub-service --target-port=4444 --type=NodePort
+
+ kubectl delete pod selenium-hub
+
+
+kubectl delete all --all  
